@@ -1,0 +1,109 @@
+:root {
+    --color-dark: #202124;
+    --color-white: #E7EAED;
+    --color-grey: #202124;
+    --color-grey-light: #5f63675a;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+@media (max-width: 800px) {
+    nav, main {
+      flex: 100%;
+    }
+  }
+/* lorsque que le taille du navigateur et entre 0 et 800px,
+mon boby passe sur une colone
+ */
+@media (max-width: 800px) {
+    body {
+        flex-wrap: wrap;
+    }
+  }
+/* grace au display:flex; mon body met nav et main
+sur deux colones */ 
+body {
+    display: flex;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+}
+
+
+/* NAV BAR */
+nav {
+    margin-right: 3rem;
+    /*
+    flex: 15%;
+    width: 15vw;
+    */
+}
+
+nav>ul {
+    padding: 0;
+}
+
+nav>ul>li {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--color-grey-light);
+    list-style: none;
+    padding: 1rem 0;
+    height: 80px;
+    width: 100%;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 250px;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100%;
+    border-right: 0.5px solid;
+    padding: 2rem;
+}
+
+/* MAIN */
+
+#main-doc {
+    position: absolute;
+    margin-left: 250px;
+    /*
+    padding: 20px;
+    */
+    margin-bottom: 110px;
+}
+main {    
+    flex: 85%;
+    width:85vw
+}
+
+header {
+    font-size: 24px;
+}
+
+a {
+    color: var(--color-white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a>ul {
+    text-decoration: none;
+}
+
+pre {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--color-grey-light);
+    border-radius: 4px;
+}
+
+.nav-link {
+    
+}
