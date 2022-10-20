@@ -9,24 +9,68 @@
     box-sizing: border-box;
   }
 
-
+/*
 @media (max-width: 800px) {
     nav, main {
       flex: 100%;
     }
   }
+
 /* lorsque que le taille du navigateur et entre 0 et 800px,
 mon boby passe sur une colone
  */
+
+ /*
 @media (max-width: 800px) {
     body {
         flex-wrap: wrap;
     }
   }
+*/
+
+  /* ******************** */
+
+
+  @media (max-width: 800px) {
+    .container1, .container2 {
+      flex: 100%;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #navbar {
+      position: relative;
+      background-color: black;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #main-doc {
+      margin-left: 1px;
+    }
+  }
+
+/* lorsque que le taille du navigateur et entre 0 et 800px,
+mon boby passe sur une colone
+ */
+@media (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
+    }
+  }
+
+ .container {
+    display: flex;
+ } 
+  /* ******************** */
+
 /* grace au display:flex; mon body met nav et main
 sur deux colones */ 
 body {
+    /*
     display: flex;
+    */
     background-color: var(--color-dark);
     color: var(--color-white);
     font-family: 'Inter', sans-serif;
@@ -57,7 +101,12 @@ nav>ul>li {
     width: 100%;
 }
 
-#navbar {
+nav>ul>li:hover {
+    cursor: pointer;
+    background-color: var(--color-grey-light);
+}
+
+.container1 {
     position: fixed;
     min-width: 250px;
     top: 0;
@@ -66,21 +115,44 @@ nav>ul>li {
     height: 100%;
     border-right: 0.5px solid;
     padding: 2rem;
+    overflow-y: auto;
+}
+
+#navbar {/*
+    position: fixed;
+    min-width: 250px;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100%;
+    border-right: 0.5px solid;
+    padding: 2rem;
+    overflow-y: auto;
+    */
 }
 
 /* MAIN */
 
-#main-doc {
+.container2 {
     position: absolute;
-    margin-left: 250px;
-    /*
+    margin-left: 230px;
     padding: 20px;
-    */
     margin-bottom: 110px;
+}
+
+#main-doc {
+    /*
+    position: absolute;
+    margin-left: 230px;
+    padding: 20px;
+    margin-bottom: 110px;
+    */
 }
 main {    
     flex: 85%;
+    /*
     width:85vw
+    */
 }
 
 header {
@@ -102,8 +174,22 @@ pre {
     margin: 1rem 0;
     background-color: var(--color-grey-light);
     border-radius: 4px;
+    width: fit-content;
 }
 
 .nav-link {
     
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--color-white);
+    width: 10vw;
+    font-size: 24px;
+}
+
+.fa-js:before {
+    content: "\f3b8";
 }
