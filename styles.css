@@ -167,21 +167,33 @@ pre {
   /* ******************** */
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     .container1, .container2 {
       flex: 100%;
       position: relative;
+      border-right: none;
+      padding: 0;
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
+    .container2 {
+      margin: 0px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    nav {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 500px) {
     #navbar {
       position: relative;
-      background-color: black;
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     #main-doc {
       margin-left: 1px;
     }
@@ -190,7 +202,7 @@ pre {
 /* lorsque que le taille du navigateur et entre 0 et 800px,
 mon boby passe sur une colone
  */
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .container {
         flex-wrap: wrap;
     }
