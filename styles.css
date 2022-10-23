@@ -28,37 +28,7 @@ mon boby passe sur une colone
   }
 */
 
-  /* ******************** */
 
-
-  @media (max-width: 800px) {
-    .container1, .container2 {
-      flex: 100%;
-      position: relative;
-    }
-  }
-
-  @media (max-width: 800px) {
-    #navbar {
-      position: relative;
-      background-color: black;
-    }
-  }
-
-  @media (max-width: 800px) {
-    #main-doc {
-      margin-left: 1px;
-    }
-  }
-
-/* lorsque que le taille du navigateur et entre 0 et 800px,
-mon boby passe sur une colone
- */
-@media (max-width: 800px) {
-    .container {
-        flex-wrap: wrap;
-    }
-  }
 
  .container {
     display: flex;
@@ -193,3 +163,35 @@ pre {
 .fa-js:before {
     content: "\f3b8";
 }
+
+  /* ******************** */
+
+
+  @media (max-width: 800px) {
+    .container1, .container2 {
+      flex: 100%;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #navbar {
+      position: relative;
+      background-color: black;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #main-doc {
+      margin-left: 1px;
+    }
+  }
+
+/* lorsque que le taille du navigateur et entre 0 et 800px,
+mon boby passe sur une colone
+ */
+@media (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
+    }
+  }
